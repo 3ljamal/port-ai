@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohamed Ashraf | AI Engineer</title>
+    <link rel="stylesheet" href="pro.css">
+
+    <!-- Font Awesome -->
+ <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<nav>
+    <h2>Mohamed ELGAMMAL</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-text">
+        <h1>AI Engineer</h1>
+        <p>Building intelligent systems that learn and evolve.</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+
+    <div class="hero-image">
+        <!-- يفضل تغيير اسم الصورة لاسم بدون مسافات -->
+       <img src="WhatsApp Image 2026-02-13 at 11.34.09 AM.jpeg" alt="Mohamed Ashraf">
+        <div class="ai-icons">
+            <span>🤖</span>
+            <span>🧠</span>
+            <span>💡</span>
+            <span>📊</span>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate AI Engineer specialized in Machine Learning,
+        Deep Learning, and intelligent system design.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Tech Stack</h2>
+    <div class="grid">
+        <div>Python</div>
+        <div>PyTorch</div>
+        <div>Pandas</div>
+        <div>NumPy</div>
+        <div>NLP</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card" onclick="showProject(this)">
+        <h3>AI Chatbot</h3>
+        <p class="project-detail" style="display:none;">
+            Intelligent chatbot using NLP and transformer models.
+        </p>
+    </div>
+
+    <div class="card" onclick="showProject(this)">
+        <h3>Image Classification Model</h3>
+        <p class="project-detail" style="display:none;">
+            Deep learning CNN model for image recognition.
+        </p>
+    </div>
+
+    <div class="card" onclick="showProject(this)">
+        <h3>Price Prediction Model</h3>
+        <p class="project-detail" style="display:none;">
+            Regression model for market forecasting.
+        </p>
+    </div>
+
+    <div class="card" onclick="showProject(this)">
+        <h3>N8N Automation Workflow</h3>
+        <p class="project-detail" style="display:none;">
+            Automation workflows and integrations using N8N for efficient task management.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 
+        <a href="mailto:elgamalm527@gmail.com" style="color:#38bdf8;">
+            elgamalm527@gmail.com
+        </a>
+    </p>
+
+    <div class="contact-icons">
+       <a href="https://mail.google.com/mail/?view=cm&to=elgamalm527@gmail.com" target="_blank">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</section>
+
+<script src="pro.js"></script>
+
+<script>
+    // Show / Hide project details
+    function showProject(card) {
+        const detail = card.querySelector('.project-detail');
+        if (detail.style.display === 'none') {
+            detail.style.display = 'block';
+        } else {
+            detail.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
